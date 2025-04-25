@@ -93,13 +93,65 @@ SELECT gender, AVG(age) AS avg_age FROM appointments GROUP BY gender;
 - `data_analysis_queries.sql`
 - `output_screenshots/` with query results
 - `README.md`
+- 
+
+---
+# 📊 Task 4: Interactive Dashboard for Business Stakeholders
+
+## 🛠️ Tools Used
+- Tableau 
+
+## 📌 Objective
+To develop an interactive dashboard that presents key KPIs and appointment insights for stakeholders to explore and interpret trends in medical appointment attendance.
+
+## 📊 Dashboard Features
+- **Slicers/Filters**:  
+  Enable filtering by Gender, Age Group, Neighbourhood, and Day of Week.
+
+- **KPI Cards**:  
+  - Total Appointments  
+  - No-show Rate  
+  - Average Age  
+
+- **Line Chart**:  
+  - Visualizes trends in appointments over time.
+
+- **Treemap**:  
+  - Shows neighbourhood-wise no-show distribution.
+
+- **Bar Charts**:  
+  - Attendance patterns by gender, weekday, and age group.
+
+- **Time-Series Analysis**:  
+  - Comparison between scheduled and attended appointments.
+
+- **Consistent Theme**:  
+  - Color-coded visual storytelling for clarity and accessibility.
+
+- **Navigation Buttons** *(if multi-page dashboard used)*:  
+  - Easy navigation between dashboard sections for better user experience.
+
+## 💡 Business Insights
+- Younger patients (especially under 25) and specific neighbourhoods show higher no-show rates.
+- No-shows vary significantly across weekdays, suggesting potential scheduling optimizations.
+- Gender and age-based behavioral patterns in appointment attendance are evident.
+- Interactive filtering allows stakeholders to drill down into specific segments for deeper insights.
+
+## 📄 Deliverables
+- Interactive dashboard file:
+  - `.pbix` (Power BI)
+  - `.twbx` (Tableau)
+- Dashboard screenshots (PDF/PNG format)
+- Updated `README.md`
 
 ---
 
 ## 👤 Author
-**Name:** Anubhav Yadav  
-**Role:** Data Analyst Intern  
-**Date:** April 2025
+**Name**: Anubhav Yadav  
+**Role**: Data Analyst Intern  
+**Date**: April 2025
+
+---
 
 ---
 
