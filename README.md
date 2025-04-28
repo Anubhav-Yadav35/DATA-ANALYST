@@ -149,7 +149,7 @@ Based on your uploaded **Titanic EDA** work, here’s a properly structured **`R
 
 ---
 
-# 🚢 Titanic Dataset - Exploratory Data Analysis (EDA)
+# @Task 5: Titanic Dataset - Exploratory Data Analysis (EDA)
 
 ## 📋 Project Description
 This project performs **Exploratory Data Analysis (EDA)** on the Titanic Dataset using **Python (Pandas, Matplotlib, Seaborn)**.  
