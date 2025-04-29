@@ -206,6 +206,34 @@ The goal is to understand key factors that influenced passenger survival, using 
 - **Embarked Port**: (not deeply analyzed here but can be extended).
 
 ---
+# Task 6: Sales Trend Analysis Using Aggregations
+
+## Internship: Data Analyst Internship (Elevate Labs - Ministry of MSME, Govt. of India)
+
+---
+
+## Objective
+Analyze *monthly revenue* and *order volume* using aggregation techniques in SQL.
+
+---
+
+## Tools Used
+•⁠  ⁠PostgreSQL / MySQL / SQLite
+
+---
+
+## Deliverables
+•⁠  ⁠SQL script
+•⁠  ⁠Results table
+
+---
+
+## Dataset
+•⁠  ⁠*online_sales*  
+  Table columns: ⁠ order_date ⁠, ⁠ amount ⁠, ⁠ product_id ⁠, ⁠ order_id ⁠
+
+---
+
 
 ## 👤 Author
 **Name**: Anubhav Yadav  
