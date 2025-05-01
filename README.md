@@ -233,6 +233,51 @@ Analyze *monthly revenue* and *order volume* using aggregation techniques in SQL
   Table columns: ⁠ order_date ⁠, ⁠ amount ⁠, ⁠ product_id ⁠, ⁠ order_id ⁠
 
 ---
+@Task 6: 📊 Tiny SQLite Sales Summary using Python
+
+This project is part of a **Data Analyst Internship Task** to demonstrate how to use **SQL inside Python** for extracting basic sales data from a small SQLite database and visualizing it with a bar chart.
+
+---
+
+#📝 Task Description
+
+- Create a small **SQLite database (`sales_data.db`)** with one table (`sales`)
+- Use Python to:
+  - Connect to the database
+  - Run basic SQL queries
+  - Load the result using `pandas`
+  - Print a summary (total quantity and revenue per product)
+  - Plot a bar chart using `matplotlib`
+
+---
+
+## 📂 Files
+
+- `Tiny SQLite Database using Python.py` – Main script that creates the DB, inserts sample data, and generates summary output and a chart.
+- `sales_data.db` – SQLite database file (created automatically).
+- `sales_chart.png` – Bar chart image showing revenue per product (auto-generated).
+
+---
+
+## 🧰 Technologies Used
+
+- Python 3.x
+- Built-in `sqlite3`
+- `pandas` for data handling
+- `matplotlib` for plotting charts
+
+---
+
+## 🔍 SQL Query Used
+
+```sql
+SELECT 
+    product,
+    SUM(quantity) AS total_qty,
+    SUM(quantity * price) AS revenue
+FROM sales
+GROUP BY product;
+
 
 
 ## 👤 Author
