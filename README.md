@@ -233,64 +233,61 @@ Analyze *monthly revenue* and *order volume* using aggregation techniques in SQL
   Table columns: ⁠ order_date ⁠, ⁠ amount ⁠, ⁠ product_id ⁠, ⁠ order_id ⁠
 
 ---
-@Task 6: 📊 Tiny SQLite Sales Summary using Python
+# 🧾 Task 7: Basic Sales Summary from a Tiny SQLite Database Using Python
 
-This project is part of a **Data Analyst Internship Task** to demonstrate how to use **SQL inside Python** for extracting basic sales data from a small SQLite database and visualizing it with a bar chart.
+## 🎯 Objective
 
----
-
-#📝 Task Description
-
-- Create a small **SQLite database (`sales_data.db`)** with one table (`sales`)
-- Use Python to:
-  - Connect to the database
-  - Run basic SQL queries
-  - Load the result using `pandas`
-  - Print a summary (total quantity and revenue per product)
-  - Plot a bar chart using `matplotlib`
+This task focuses on integrating **SQL with Python** to perform simple data analysis and visualization using a **tiny SQLite database**. It demonstrates how to:
+- Connect to a database
+- Run SQL queries to calculate sales metrics (total quantity and revenue)
+- Load results into `pandas`
+- Visualize outcomes using `matplotlib`
 
 ---
 
-## 📂 Files
+## 🧰 Tools Used
 
-- `Tiny SQLite Database using Python.py` – Main script that creates the DB, inserts sample data, and generates summary output and a chart.
-- `sales_data.db` – SQLite database file (created automatically).
-- `sales_chart.png` – Bar chart image showing revenue per product (auto-generated).
-
----
-
-## 🧰 Technologies Used
-
-- Python 3.x
-- Built-in `sqlite3`
-- `pandas` for data handling
-- `matplotlib` for plotting charts
+- **Python 3.x**
+- **SQLite** (via `sqlite3` module)
+- **pandas** for data handling
+- **matplotlib** for visualization
+- **VS Code / Jupyter Notebook** (for running the script)
 
 ---
 
-## 🔍 SQL Query Used
+## 📂 Files Included
 
-```sql
-SELECT 
-    product,
-    SUM(quantity) AS total_qty,
-    SUM(quantity * price) AS revenue
-FROM sales
-GROUP BY product;
-
-
-
-## 👤 Author
-**Name**: Anubhav Yadav  
-**Role**: Data Analyst Intern  
-**Date**: April 2025
+- `Tiny SQLite Database using Python.py`: Complete script to create database, insert data, query, and visualize.
+- `sales_data.db`: SQLite database file (auto-generated)
+- `sales_chart.png`: Bar chart visualizing revenue per product (auto-saved)
 
 ---
 
----
+## 🗃️ Dataset Structure
 
-## 📧 Contact
-- Email: anubhav9695332@gmail.com
-- LinkedIn: https://www.linkedin.com/in/anubhav-/
+The script automatically creates a table named `sales` with the following fields:
+
+| Column   | Type    | Description               |
+|----------|---------|---------------------------|
+| id       | INTEGER | Auto-incremented ID       |
+| product  | TEXT    | Name of the product       |
+| quantity | INTEGER | Quantity sold             |
+| price    | REAL    | Price per unit of product |
+
+### 📥 Sample Data Inserted
+
+```text
+Apple  - 10 units @ ₹0.5
+Banana - 20 units @ ₹0.3
+Orange - 15 units @ ₹0.7
+Grapes - 12 units @ ₹1.0
+
+
+📅 Internship
+Program: Data Analyst Internship
+Organization: Elevate Labs – Ministry of MSME, Govt. of India
+Intern: Anubhav Yadav
+Email: anubhav9695332@gmail.com
+LinkedIn:https://www.linkedin.com/in/anubhav-/
 
 
