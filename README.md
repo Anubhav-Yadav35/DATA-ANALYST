@@ -1,6 +1,9 @@
 # 🮝️ Data Analyst Internship Project – README
+📅 Internship
+Program: Data Analyst Internship
+Organization: Elevate Labs – Ministry of MSME, Govt. of India
 
-This repository contains all the work completed as part of the **Data Analyst Internship**, structured into four key tasks: **Data Cleaning & Preprocessing**, **Data Visualization & Storytelling**, and **SQL for Data Analysis**,**Task 4: Interactive Dashboard for Business Stakeholders**,**Task 5: Exploratory Data Analysis (EDA)**.
+This repository contains all the work completed as part of the **Data Analyst Internship**, structured into four key tasks: **Data Cleaning & Preprocessing**, **Data Visualization & Storytelling**, and **SQL for Data Analysis**,**Task 4: Interactive Dashboard for Business Stakeholders**,**Task 5: Exploratory Data Analysis (EDA)**,**Task 6:Sales Trend Analysis Using Aggregations**,**Task 7: Basic Sales Summary from a Tiny SQLite Database Using Python**.
 
 ---
 
