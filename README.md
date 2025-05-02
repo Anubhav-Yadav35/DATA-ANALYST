@@ -147,7 +147,7 @@ Aggregate monthly revenue and order volume
 **Deliverables:**
 - Python script  
 - SQLite DB file  
-- Chart: [Tiny SQLite Database using Python] (https://github.com/Anubhav-Yadav35/DATA-ANALYST/blob/main/Tiny%20SQLite%20Database%20using%20Python.png)
+- Chart: [Tiny SQLite Database using Python.pdf] (https://github.com/Anubhav-Yadav35/DATA-ANALYST/blob/main/Tiny%20SQLite%20Database%20using%20Python.png)
 
 ---
 
