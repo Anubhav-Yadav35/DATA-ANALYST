@@ -1,296 +1,193 @@
-# 🮝️ Data Analyst Internship Project – README
-📅 Internship
-Program: Data Analyst Internship
-Organization: Elevate Labs – Ministry of MSME, Govt. of India
+# 🧠 Data Analyst Internship Portfolio – Elevate Labs x Ministry of MSME
 
-This repository contains all the work completed as part of the **Data Analyst Internship**, structured into four key tasks: **Data Cleaning & Preprocessing**, **Data Visualization & Storytelling**, and **SQL for Data Analysis**,**Task 4: Interactive Dashboard for Business Stakeholders**,**Task 5: Exploratory Data Analysis (EDA)**,**Task 6:Sales Trend Analysis Using Aggregations**,**Task 7: Basic Sales Summary from a Tiny SQLite Database Using Python**.
+**Internship Program:** Data Analyst Internship  
+**Organization:** Elevate Labs – Ministry of MSME, Government of India  
+**Intern:** Anubhav Yadav  
+**Email:** anubhav9695332@gmail.com  
+**LinkedIn:** [Anubhav Yadav](https://www.linkedin.com/in/anubhav-/)
 
 ---
 
-## 🌀 Task 1: Data Cleaning and Preprocessing
+## 📌 Overview
 
-**Dataset:** [Medical Appointment No Shows](https://www.kaggle.com/datasets/joniarroba/noshowappointments)
+This repository documents my journey and work as a Data Analyst Intern, showcasing practical experience with real-world datasets using Python, SQL, Power BI/Tableau, and core data analysis techniques. The work is structured into the following tasks:
 
-### 📌 Objective
-To clean and preprocess a dataset by:
-- Identifying and handling missing values
-- Removing duplicate entries
-- Standardizing inconsistent text and column formats
-- Converting data types (e.g., dates)
-- Exporting a clean dataset for analysis
+1. Data Cleaning & Preprocessing  
+2. Data Visualization & Storytelling  
+3. SQL for Data Analysis  
+4. Interactive Dashboards  
+5. Exploratory Data Analysis (EDA)  
+6. Sales Trend Aggregation  
+7. SQLite Sales Summary using Python  
+8. Simple Sales Dashboard Design
 
-### 🛠️ Tools & Libraries
-- Python
-- Pandas
-- Google Colab / Jupyter Notebook
+---
 
-### 📊 Steps Followed
-1. **Loading the Dataset** using Pandas
-2. **Initial Inspection** using `.head()`, `.info()`, `.describe()`
-3. **Handling Missing Values** using `.isnull().sum()`
-4. **Removing Duplicates** using `.duplicated()` and `.drop_duplicates()`
-5. **Standardizing Text Data** with `.str.lower()` and `.str.strip()`
-6. **Date Conversion** for `ScheduledDay` and `AppointmentDay`
-7. **Column Renaming** to `snake_case`
-8. **Invalid Data Removal**, e.g., negative ages
+## 🧼 Task 1: Data Cleaning & Preprocessing
 
-### ✅ Output
+**Dataset:** [Medical Appointment No Shows (Kaggle)](https://www.kaggle.com/datasets/joniarroba/noshowappointments)  
+**Tools:** Python, Pandas  
+
+### Objectives:
+- Handle missing and duplicate data
+- Standardize column names and text formats
+- Convert string dates to datetime objects
+- Remove invalid entries (e.g., negative ages)
+
+**Deliverables:**
 - `cleaned_medical_appointments.csv`
-- Notebook with all cleaning steps
+- Jupyter notebook with cleaning steps
 
 ---
 
-## 📊 Task 2: Data Visualization and Storytelling
+## 📊 Task 2: Data Visualization & Storytelling
 
-**Tool Used:** Tableau / Power BI  
-**Dataset Used:** Cleaned dataset from Task 1
+**Tools:** Tableau / Power BI  
+**Dataset:** Cleaned output from Task 1  
 
-### 🔎 Objective
-To create compelling visuals that reveal hidden insights and present a clear story.
+### Visuals:
+- Bar Chart: Show vs No-show count  
+- Heatmap: Day vs Neighbourhood  
+- Treemap: Neighbourhood-wise no-shows  
+- Line Chart: Appointment trends  
 
-### 🛠️ Tools
-- Tableau / Power BI
-- (Optional) Excel or Google Sheets for quick aggregations
+**Insights:**
+- Young patients (<25) had highest no-show rate  
+- Certain neighbourhoods had significant no-show clusters  
+- Females showed slightly higher no-show patterns  
 
-### ✨ Visuals Created
-- Bar Chart: Show vs No-show count
-- Pie Chart: Gender distribution of no-shows
-- Heatmap: Day of week vs Neighbourhood
-- Line Chart: Appointment trends over time
-- Treemap: Neighbourhood influence on no-shows
-
-### 💡 Business Insights
-- Highest no-show rates in young patients (<25)
-- Slightly higher no-shows in females
-- Specific neighbourhoods show more no-shows
-
-### 📄 Deliverables
-- Dashboard screenshots (PDF or PNG)
-- `Story_Report.pdf`
-- `README.md`
+**Deliverables:**
+- Story_Report.pdf  
+- Dashboard screenshots  
+- README.md  
 
 ---
 
 ## 🧠 Task 3: SQL for Data Analysis
 
+**Tools:** SQLite / MySQL / PostgreSQL  
+**Dataset:** Cleaned appointment data  
+
+### SQL Concepts Applied:
+- `SELECT`, `WHERE`, `GROUP BY`, `ORDER BY`  
+- Aggregate functions: `SUM`, `AVG`, `COUNT`  
+- Joins and subqueries  
+- View creation and indexing for performance
+
+**Deliverables:**
+- `data_analysis_queries.sql`  
+- Output screenshots  
+- README.md  
+
+---
+
+## 📈 Task 4: Interactive Dashboard for Business Stakeholders
+
+**Tool:** Tableau  
+**Goal:** Build an interactive dashboard showing KPIs and trends in medical appointments.
+
+### Features:
+- KPI Cards: Total Appointments, No-show Rate, Average Age  
+- Filters: Gender, Age Group, Day, Neighbourhood  
+- Charts: Line, Bar, Treemap  
+
+**Insights:**
+- No-show rates vary by weekday  
+- Young patients are less likely to attend  
+- Strong correlation between region and no-shows  
+
+**Deliverables:**
+- `.twbx` Tableau dashboard file  
+- PDF snapshots of dashboard  
+
+---
+
+## 🧪 Task 5: Exploratory Data Analysis (Titanic Dataset)
+
+**Tools:** Python, Pandas, Seaborn, Matplotlib  
+**Dataset:** Titanic-Dataset.csv
+
+### Analysis:
+- Survival based on gender, age, class, and fare  
+- Correlation heatmap  
+- Age and fare distribution  
+- Boxplots and scatterplots
+
+**Insights:**
+- Females and first-class passengers had higher survival rates  
+- Younger passengers and those who paid higher fares fared better  
+
+---
+
+## 🧾 Task 6: Sales Trend Analysis Using SQL Aggregations
+
 **Tools:** MySQL / PostgreSQL / SQLite  
-**Dataset:** Cleaned medical appointment data
+**Dataset:** `online_sales`
 
-### 📌 Objective
-To write SQL queries that extract and summarize data insights.
+### Objective:
+Aggregate monthly revenue and order volume
 
-### 🔍 Key Concepts
-- **SELECT, WHERE, ORDER BY, GROUP BY**
-- **JOINS:** INNER, LEFT, RIGHT
-- **Subqueries**
-- **Aggregate Functions:** SUM, AVG, COUNT
-- **Views** for analytical summaries
-- **Indexing** for query optimization
-
-### ⚖️ Sample Query
-```sql
-SELECT gender, AVG(age) AS avg_age FROM appointments GROUP BY gender;
-```
-
-### 📄 Deliverables
-- `data_analysis_queries.sql`
-- `output_screenshots/` with query results
-- `README.md`
-- 
-
----
-# 📊 Task 4: Interactive Dashboard for Business Stakeholders
-
-## 🛠️ Tools Used
-- Tableau 
-
-## 📌 Objective
-To develop an interactive dashboard that presents key KPIs and appointment insights for stakeholders to explore and interpret trends in medical appointment attendance.
-
-## 📊 Dashboard Features
-- **Slicers/Filters**:  
-  Enable filtering by Gender, Age Group, Neighbourhood, and Day of Week.
-
-- **KPI Cards**:  
-  - Total Appointments  
-  - No-show Rate  
-  - Average Age  
-
-- **Line Chart**:  
-  - Visualizes trends in appointments over time.
-
-- **Treemap**:  
-  - Shows neighbourhood-wise no-show distribution.
-
-- **Bar Charts**:  
-  - Attendance patterns by gender, weekday, and age group.
-
-- **Time-Series Analysis**:  
-  - Comparison between scheduled and attended appointments.
-
-- **Consistent Theme**:  
-  - Color-coded visual storytelling for clarity and accessibility.
-
-- **Navigation Buttons** *(if multi-page dashboard used)*:  
-  - Easy navigation between dashboard sections for better user experience.
-
-## 💡 Business Insights
-- Younger patients (especially under 25) and specific neighbourhoods show higher no-show rates.
-- No-shows vary significantly across weekdays, suggesting potential scheduling optimizations.
-- Gender and age-based behavioral patterns in appointment attendance are evident.
-- Interactive filtering allows stakeholders to drill down into specific segments for deeper insights.
-
-## 📄 Deliverables
-- Interactive dashboard file:
-  - `.pbix` (Power BI)
-  - `.twbx` (Tableau)
-- Dashboard screenshots (PDF/PNG format)
-- Updated `README.md`
-
----
-Based on your uploaded **Titanic EDA** work, here’s a properly structured **`README.md`** file you can use:
+**Deliverables:**
+- SQL script for trend analysis  
+- Result tables and visualizations  
 
 ---
 
-# @Task 5: Titanic Dataset - Exploratory Data Analysis (EDA)
+## 📉 Task 7: Basic Sales Summary Using Python & SQLite
 
-## 📋 Project Description
-This project performs **Exploratory Data Analysis (EDA)** on the Titanic Dataset using **Python (Pandas, Matplotlib, Seaborn)**.  
-The goal is to understand key factors that influenced passenger survival, using visualizations and statistical summaries.
+**Tools:** Python, SQLite3, Pandas, Matplotlib  
+**Objective:** Perform SQL queries via Python and visualize results
 
----
+### Process:
+- Create SQLite DB & `sales` table  
+- Insert sample data  
+- Query total quantity & revenue  
+- Generate bar chart for sales per product  
 
-## 🛠 Tools Used
-- **Python 3**
-- **Pandas** for data manipulation
-- **Matplotlib** and **Seaborn** for visualization
-
----
-
-## 📚 Steps Followed
-
-### 1. Data Loading
-- Loaded the Titanic Dataset (`Titanic-Dataset.csv`) using Pandas.
-
-### 2. Basic Data Exploration
-- Used `.info()` to understand data types and missing values.
-- Used `.describe()` for statistical summaries of numerical columns.
-- Used `.value_counts()` to explore categorical variables:
-  - Survived (0 = No, 1 = Yes)
-  - Pclass (Ticket Class)
-  - Sex (Gender Distribution)
-
-### 3. Data Visualization
-- **Pairplot**: Visualized pairwise relationships between important numerical features (`Survived`, `Pclass`, `Age`, `SibSp`, `Parch`, `Fare`).
-- **Correlation Heatmap**: Plotted a heatmap showing relationships between numerical features.
-- **Histogram (Age)**: Plotted the age distribution of passengers.
-- **Boxplot (Age vs Survived)**: Analyzed survival chances by age.
-- **Scatterplot (Fare vs Age)**: Investigated the relationship between Fare, Age, and Survival.
+**Deliverables:**
+- Python script  
+- SQLite DB file  
+- Chart: `sales_chart.png`  
 
 ---
 
-## 📊 Key Visualizations and Observations
+## 📊 Task 8: **Simple Sales Dashboard Design**
 
-| Visualization | Observation |
-|:--------------|:------------|
-| Pairplot | Survivors were mostly from 1st class and had paid higher fares. |
-| Heatmap | Fare and Pclass are negatively correlated. Survival correlates slightly with Fare and Pclass. |
-| Age Histogram | Most passengers were between 20-40 years old. |
-| Boxplot (Age vs Survival) | Younger passengers had a higher chance of survival. |
-| Scatterplot (Fare vs Age) | Higher-paying passengers tended to survive more. |
+**Tools:** Python (Matplotlib, Seaborn) / Power BI / Tableau  
+**Dataset:** Sample - Superstore.csv  
 
----
+### Objective:
+Create a dashboard visualizing sales performance by:
+- **Time (Month-Year)**
+- **Region**
+- **Product Category**
 
-## 📈 Summary of Findings
-- **Gender**: Females had a significantly higher survival rate.
-- **Class**: 1st Class passengers had better survival chances.
-- **Age**: Children and younger passengers had a slightly higher survival rate.
-- **Fare**: Passengers who paid higher fares had better survival chances.
-- **Embarked Port**: (not deeply analyzed here but can be extended).
+### Visuals:
+1. Line Chart – Sales Over Months  
+2. Bar Chart – Sales by Region  
+3. Donut Chart – Sales by Category  
 
----
-# Task 6: Sales Trend Analysis Using Aggregations
+### Key Insights:
+- West region had the highest sales in Q3  
+- December saw the highest sales spike  
+- Technology category outperformed others  
 
-## Internship: Data Analyst Internship (Elevate Labs - Ministry of MSME, Govt. of India)
+**Deliverables:**
+- 📎 [Sales_Dashboard_Report.pdf](https://github.com/your-username/your-repo-name/raw/main/Sales_Dashboard_Report.pdf)  
+- README.md (this file)
 
----
-
-## Objective
-Analyze *monthly revenue* and *order volume* using aggregation techniques in SQL.
+> 🔁 *Update the PDF link above with your actual GitHub repo path.*
 
 ---
 
-## Tools Used
-•⁠  ⁠PostgreSQL / MySQL / SQLite
+## 📌 Final Notes
 
----
+This portfolio highlights my hands-on experience with core data analysis tasks including:
+- Data cleaning
+- Visualization and storytelling
+- SQL querying
+- Dashboard development
+- EDA and trend insights
 
-## Deliverables
-•⁠  ⁠SQL script
-•⁠  ⁠Results table
-
----
-
-## Dataset
-•⁠  ⁠*online_sales*  
-  Table columns: ⁠ order_date ⁠, ⁠ amount ⁠, ⁠ product_id ⁠, ⁠ order_id ⁠
-
----
-# 🧾 Task 7: Basic Sales Summary from a Tiny SQLite Database Using Python
-
-## 🎯 Objective
-
-This task focuses on integrating **SQL with Python** to perform simple data analysis and visualization using a **tiny SQLite database**. It demonstrates how to:
-- Connect to a database
-- Run SQL queries to calculate sales metrics (total quantity and revenue)
-- Load results into `pandas`
-- Visualize outcomes using `matplotlib`
-
----
-
-## 🧰 Tools Used
-
-- **Python 3.x**
-- **SQLite** (via `sqlite3` module)
-- **pandas** for data handling
-- **matplotlib** for visualization
-- **VS Code / Jupyter Notebook** (for running the script)
-
----
-
-## 📂 Files Included
-
-- `Tiny SQLite Database using Python.py`: Complete script to create database, insert data, query, and visualize.
-- `sales_data.db`: SQLite database file (auto-generated)
-- `sales_chart.png`: Bar chart visualizing revenue per product (auto-saved)
-
----
-
-## 🗃️ Dataset Structure
-
-The script automatically creates a table named `sales` with the following fields:
-
-| Column   | Type    | Description               |
-|----------|---------|---------------------------|
-| id       | INTEGER | Auto-incremented ID       |
-| product  | TEXT    | Name of the product       |
-| quantity | INTEGER | Quantity sold             |
-| price    | REAL    | Price per unit of product |
-
-### 📥 Sample Data Inserted
-
-```text
-Apple  - 10 units @ ₹0.5
-Banana - 20 units @ ₹0.3
-Orange - 15 units @ ₹0.7
-Grapes - 12 units @ ₹1.0
-
-
-📅 Internship
-Program: Data Analyst Internship
-Organization: Elevate Labs – Ministry of MSME, Govt. of India
-Intern: Anubhav Yadav
-Email: anubhav9695332@gmail.com
-LinkedIn:https://www.linkedin.com/in/anubhav-/
-
+Feel free to connect via [LinkedIn](https://www.linkedin.com/in/anubhav-/) or reach out for collaboration!
 
