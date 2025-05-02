@@ -173,7 +173,7 @@ Create a dashboard visualizing sales performance by:
 - Technology category outperformed others  
 
 **Deliverables:**
-- 📎 [Sales_Dashboard_Report.pdf](https://github.com/your-username/your-repo-name/raw/main/Sales_Dashboard_Report.pdf)  
+- 📎 [Sales_Dashboard_Report.pdf](https://github.com/Anubhav-Yadav35/DATA-ANALYST/blob/main/Sales_Dashboard_Report.pdf)
 - README.md (this file)
 
 > 🔁 *Update the PDF link above with your actual GitHub repo path.*
